@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_Lesson_17", "ASP_Lesson
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaSchedule.Core", "CinemaSchedule.Core\CinemaSchedule.Core.csproj", "{9848D8CF-8A82-4B82-96AD-F328B06983D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaSchedule.Data", "CinemaSchedule.Data\CinemaSchedule.Data.csproj", "{7C94653E-3809-4633-BA1D-3E0165A8F0FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C94653E-3809-4633-BA1D-3E0165A8F0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C94653E-3809-4633-BA1D-3E0165A8F0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C94653E-3809-4633-BA1D-3E0165A8F0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C94653E-3809-4633-BA1D-3E0165A8F0FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

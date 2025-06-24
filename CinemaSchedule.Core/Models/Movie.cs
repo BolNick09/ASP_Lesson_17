@@ -1,4 +1,4 @@
-﻿namespace ASP_Lesson_17.Models
+﻿namespace CinemaSchedule.Core.Models
 {
     public class Movie
     {
