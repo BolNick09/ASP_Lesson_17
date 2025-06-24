@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_Lesson_17", "ASP_Lesson_17\ASP_Lesson_17.csproj", "{9B9D107A-D865-4B4F-93A6-2094FF69F19B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaSchedule.Core", "CinemaSchedule.Core\CinemaSchedule.Core.csproj", "{9848D8CF-8A82-4B82-96AD-F328B06983D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9D107A-D865-4B4F-93A6-2094FF69F19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9D107A-D865-4B4F-93A6-2094FF69F19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9D107A-D865-4B4F-93A6-2094FF69F19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9D107A-D865-4B4F-93A6-2094FF69F19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9848D8CF-8A82-4B82-96AD-F328B06983D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54759C01-5714-434C-AED4-9769BFC79901}
+	EndGlobalSection
+EndGlobal

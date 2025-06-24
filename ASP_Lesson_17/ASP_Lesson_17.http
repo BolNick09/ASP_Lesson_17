@@ -1,0 +1,6 @@
+@ASP_Lesson_17_HostAddress = http://localhost:5159
+
+GET {{ASP_Lesson_17_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
