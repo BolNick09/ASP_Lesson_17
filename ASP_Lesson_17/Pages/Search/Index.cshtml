@@ -1,0 +1,51 @@
+﻿@page
+@model ASP_Lesson_17.Pages.Search.IndexModel
+@{
+    ViewData["Title"] = "Search Movies";
+}
+
+<h1>Search Movies</h1>
+
+<form method="get">
+    <div class="form-group">
+        <input type="text" name="searchTerm" class="form-control" placeholder="Enter search term..." />
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </div>
+</form>
+
+@if (Model.Movies != null && Model.Movies.Any())
+{
+    <h2>Results</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Genre</th>
+                <th>Sessions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model.Movies)
+            {
+                <tr>
+                    <td>@movie.Title</td>
+                    <td>@movie.Director</td>
+                    <td>@movie.Genre</td>
+                    <td>
+                        @foreach (var session in movie.Sessions)
+                        {
+                            <span>@session.ShowTime.ToString("g")</span>
+
+                            <br />
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (!string.IsNullOrEmpty(Model.SearchTerm))
+{
+    <p>No movies found for "@Model.SearchTerm"</p>
+}

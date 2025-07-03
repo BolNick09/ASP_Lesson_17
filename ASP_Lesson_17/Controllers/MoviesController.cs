@@ -1,5 +1,7 @@
-﻿using CinemaSchedule.Core.Models;
+﻿using ASP_Lesson_17.Filters;
+using CinemaSchedule.Core.Models;
 using CinemaSchedule.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASP_Lesson_17.Controllers
@@ -29,6 +31,7 @@ namespace ASP_Lesson_17.Controllers
         }
 
         [HttpGet("{id}")]
+        [MovieExists]
         public IActionResult GetMovieById(int id)
         {
             var movie = _movieRepository.GetMovieById(id);
@@ -36,6 +39,25 @@ namespace ASP_Lesson_17.Controllers
                 return NotFound();
 
             return Ok(movie);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateMovie(int id, Movie movie)
+        {
+            if (id != movie.Id)
+                return BadRequest();
+
+            _movieRepository.UpdateMovie(movie);
+            return NoContent();
+        }
+
+        [Authorize]
+        [HttpPost]
+        [ServiceFilter(typeof(MovieValidationFilter))]
+        public IActionResult AddMovie(Movie movie)
+        {
+            _movieRepository.AddMovie(movie);
+            return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, movie);
         }
     }
 }

@@ -11,5 +11,8 @@ namespace CinemaSchedule.Data
     {
         IEnumerable<Movie> GetAllMovies();
         Movie GetMovieById(int id);
+        IEnumerable<Movie> SearchMovies(string searchTerm);
+        void UpdateMovie(Movie movie);
+        void AddMovie(Movie movie);
     }
 }
